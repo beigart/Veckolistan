@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:padding="2dp"
+    android:layout_margin="5dp"
+    >
+    
+    <RelativeLayout
+        android:id="@+id/cardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        >
+
+        <TextView
+            android:id="@+id/nameofExpense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Utgift"
+            android:fontFamily="@font/luckiest_guy"
+            android:textSize="20dp"
+            android:textColor="@color/pink"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/sumofExpense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="2st"
+            android:fontFamily="@font/luckiest_guy"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_stat_name"
+            android:layout_toLeftOf="@+id/arrow"
+            android:paddingRight="-5dp"
+            />
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="-5dp"
+            />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
